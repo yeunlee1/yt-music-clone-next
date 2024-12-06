@@ -1,14 +1,24 @@
-import React from 'react'
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
+import React from 'react';
+import {
+  Avatar,
+  AvatarImage,
+  AvatarFallback,
+} from '@/components/ui/avatar';
+import { cn } from '@/lib/utils';
 
-const UserIcon = () => {
-    return (
-        <Avatar>
-            <AvatarImage src="https://github.com/shadcn.png" />
-            <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
+const UserIcon = ({ size = 'sm' }) => {
+  return (
+    <Avatar
+      className={cn(
+        'w-[26px] h-[26px]' &&
+          size === 'lg' &&
+          'w-[56px] h-[56px]',
+      )}
+    >
+      <AvatarImage src="https://github.com/shadcn.png" />
+      <AvatarFallback>CN</AvatarFallback>
+    </Avatar>
+  );
+};
 
-    )
-}
-
-export default UserIcon
+export default UserIcon;

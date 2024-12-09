@@ -1,3 +1,6 @@
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
+import { ReactNode } from 'react';
+
 export interface Song {
   name: string;
   channelId: number;

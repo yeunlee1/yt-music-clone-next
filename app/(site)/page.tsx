@@ -2,7 +2,7 @@ import { sleep } from '@/lib/utils';
 import React from 'react';
 import Category from '@/app/(site)/components/Category';
 import PagePadding from '@/components/PagePadding';
-import PlayListCarousel from '@/components/ui/PlayListCarousel';
+import PlayListCarousel from '@/components/PlayListCarousel';
 import { dummyPlaylistArray, getPlaylistById } from '@/lib/dummyData';
 import UserIcon from '@/components/UserIcon';
 
@@ -34,7 +34,7 @@ const HomePage = async () => {
           title="케이시 - Full Bloom"
           subTitle="새로운 앨범"
         />
-                <div className="mt-20"></div>
+        <div className="mt-20"></div>
         <PlayListCarousel
           playlistArray={[...dummyPlaylistArray3]}
           title="커뮤니티 제공"
